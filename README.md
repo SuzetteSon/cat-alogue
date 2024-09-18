@@ -3,14 +3,16 @@
 My friend Dave is hoarding cats and he has asked me to help organize his growing furry
 family of cats.
 As a user, one should be able to
-● add cats to the collection,
-● view the list of cats and their individual details (e.g. name, date of birth...)
-● as well as edit the details,
-● and remove cats that have gone to Cat Heaven
+
+- add cats to the collection,
+- view the list of cats and their individual details (e.g. name, date of birth...)
+- as well as edit the details,
+- and remove cats that have gone to Cat Heaven
 
 Bonus:
-● sort cats,
-● search cats
+
+- sort cats,
+- search cats
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
