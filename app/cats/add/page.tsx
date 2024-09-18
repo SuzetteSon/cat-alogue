@@ -17,6 +17,7 @@ const AddCatPage: React.FC = () => {
 
   const { addCat } = catContext
 
+  // data parameter of the handleAddCat function is of type Cat but without the id property.
   const handleAddCat = (data: Omit<Cat, 'id'>) => {
     addCat(data)
     router.push('/cats')

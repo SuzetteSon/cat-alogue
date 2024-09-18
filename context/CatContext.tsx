@@ -1,14 +1,14 @@
 // context/CatContext.tsx
 'use client'
 
-import React, { createContext, useState, ReactNode, useEffect } from 'react'
+import React, { createContext, useState, ReactNode } from 'react'
 import { Cat } from '../types/cat'
 import { v4 as uuidv4 } from 'uuid'
 
 interface CatContextType {
   cats: Cat[]
-  addCat: (cat: Omit<Cat, 'id'>) => void
-  editCat: (id: string, updatedCat: Omit<Cat, 'id'>) => void
+  addCat: (cat: Omit<Cat, 'id'>) => void // id provided by uuid
+  editCat: (id: string, updatedCat: Omit<Cat, 'id'>) => void // id provided by uuid
   removeCat: (id: string) => void
 }
 
@@ -83,8 +83,8 @@ export const CatProvider: React.FC<{ children: ReactNode }> = ({
   // }, [])
 
   const addCat = (cat: Omit<Cat, 'id'>) => {
-    const newCat: Cat = { id: uuidv4(), ...cat }
-    setCats((prevCats) => [...prevCats, newCat])
+    const newCat: Cat = { id: uuidv4(), ...cat } //adding the new id into the cat array
+    setCats((prevCats) => [...prevCats, newCat]) //prevCats respresents the current state of cats, adds newCat to existing array of cats
   }
 
   const editCat = (id: string, updatedCat: Omit<Cat, 'id'>) => {

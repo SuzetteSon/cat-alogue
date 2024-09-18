@@ -11,6 +11,7 @@ const EditCatPage: React.FC = () => {
   const router = useRouter()
   const catContext = useContext(CatContext)
 
+  //feedback to the user that the data is loading
   if (!catContext) {
     return <div>Loading...</div>
   }

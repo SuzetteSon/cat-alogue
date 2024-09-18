@@ -25,10 +25,9 @@ const CatForm: React.FC<CatFormProps> = ({ initialData, onSubmit }) => {
   }, [initialData])
 
   const validate = () => {
-    const newErrors: { [key: string]: string } = {}
+    const newErrors: { [key: string]: string } = {} // annotation type for newErrors key which is a string and value which is a string
     if (!name.trim()) newErrors.name = 'Name is required'
     if (!dateOfBirth) newErrors.dateOfBirth = 'Date of Birth is required'
-    // Additional validations can be added here
     return newErrors
   }
 

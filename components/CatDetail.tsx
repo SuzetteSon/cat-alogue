@@ -26,6 +26,7 @@ const CatDetail: React.FC = () => {
       <p className="mb-2">
         <strong>Date of Birth:</strong>{' '}
         {new Date(cat.dateOfBirth).toLocaleDateString()}
+        {/* toLocaleDateString formats Date object into a string */}
       </p>
       {cat.breed && (
         <p className="mb-2">

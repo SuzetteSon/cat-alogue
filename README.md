@@ -121,6 +121,7 @@ Form for editing cat information - cats/edit/[id]/page.tsx
    - Wireframes
    - Low-fidelity prototype
    - high-fedility designs
+10. Date validation
 
 ## Known Bugs
 
