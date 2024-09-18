@@ -1,4 +1,3 @@
-// components/CatList.tsx
 'use client'
 
 import React, { useContext, useState } from 'react'
