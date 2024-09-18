@@ -1,4 +1,3 @@
-
 'use client'
 
 import React, { useContext } from 'react'
@@ -22,7 +21,7 @@ const CatDetail: React.FC = () => {
   }
 
   return (
-    <div className="border p-6 rounded">
+    <div className="border p-6 rounded max-h-[250px]">
       <h1 className="text-3xl font-bold mb-4">{cat.name}</h1>
       <p className="mb-2">
         <strong>Date of Birth:</strong>{' '}
