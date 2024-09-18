@@ -23,15 +23,15 @@ const CatList: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-      <div>
-        <h1 className="text-2xl font-bold mb-4">Cat Collection</h1>
-
-        <Search
-          value={searchTerm}
-          placeholder={'Search by name...'}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+      {filteredCats.length > 0 && (
+        <div>
+          <Search
+            value={searchTerm}
+            placeholder={'Search by name...'}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+      )}
 
       {filteredCats.length === 0 ? (
         <p>No cats found.</p>
