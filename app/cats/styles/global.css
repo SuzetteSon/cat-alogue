@@ -1,0 +1,10 @@
+/* styles/CatList.module.css */
+.catItem {
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+}
+
+/* Add more styles as needed */
