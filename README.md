@@ -109,7 +109,7 @@ Form for editing cat information - cats/edit/[id]/page.tsx
   Molecules
   The Card components combining an text and a button, the navigation menu with icons and labels
   Organisms
-- Hader containing a logo, navigation menu, and search form; a product listing section with product cards.
+- Header containing a logo, navigation menu, and search form; a product listing section with product cards.
   Templates
   Pages
 
@@ -122,6 +122,8 @@ Form for editing cat information - cats/edit/[id]/page.tsx
    - Low-fidelity prototype
    - high-fedility designs
 10. Date validation
+11. Clean up package.json - unused dependencies
+12. Design Token definitions
 
 ## Known Bugs
 
